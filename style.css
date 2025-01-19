@@ -1,0 +1,80 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+  background-color: var(--slate-300);
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 20px); 
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--white);
+  width: 90%;
+  max-width: 350px; 
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0 15px; 
+  gap: 15px; 
+  overflow: hidden;
+}
+
+.qr-img {
+  width: 100%;
+  height: auto;
+  margin: 15px 0; 
+  border-radius: 10px; 
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.4; 
+  gap: 8px; 
+}
+
+.text1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0;
+  color: var(--slate-900);
+}
+
+.text2 {
+  font-size: 14px;
+  color: var(--slate-500);
+  margin: 0; 
+  margin-bottom: 30px; 
+}
+
+.text1 span, .text2 span {
+  display: block;
+}
+
+@media (max-width: 375.99px) {
+  main {
+    padding: 0 20px;
+  }
+}
+
+
+
+
